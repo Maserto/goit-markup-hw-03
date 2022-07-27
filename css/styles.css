@@ -274,6 +274,7 @@ margin: 0;
 .team {
 margin-top: 94px;
 padding-top: 94px;
+padding-bottom: 94px;
   background-color: #F5F4FA;
 }
 .team-title {
@@ -302,6 +303,8 @@ height: 368px;
   width: 270px;
 height: 368px;
 background-color:  var(--white-text-color);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 
 
@@ -315,7 +318,7 @@ display: flex;
   font-weight: 500;
   font-size: 16px;
 line-height: calc(19/16);
-text-align: center;
+/* text-align: center; */
 letter-spacing: 0.03em;
 color: var(--brand-text-color);
 }
@@ -330,6 +333,8 @@ color: #757575;
 
 /* footer */
 .basement {
+padding-top: 60px;
+
 background-color: #2F303A;
 }
 .basement-logo {
@@ -342,6 +347,9 @@ background-color: #2F303A;
 }
 .basement-logo > span {color: var(--accent-color);}
 .basement-adress {
+margin-top: 20px;
+margin-bottom: 0;
+
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
@@ -349,7 +357,10 @@ line-height: calc(24/14);
 letter-spacing: 0.03em;
 color: var(--white-text-color)}
 
-.basement-mail, .basement-tel {
+.basement-contacts 
+{margin-top: 9px;}
+
+.basement-contact-mail, .basement-contact-tel {
   font-style: normal;
 font-size: 14px;
 line-height: 24px;
