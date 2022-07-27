@@ -165,8 +165,17 @@ color: #757575;
 }
 /* HERO */
 .hero { background-color: #2F303A;
+  text-align: center;
 }
 .hero-title {
+  /* display: block; */
+  /* width:696px; */
+/* height:120px; */
+
+padding-top: 200px;
+padding-bottom: 30px;
+
+
   font-weight: 900;
 font-size: 44px;
 line-height: calc(60/44);
@@ -183,6 +192,7 @@ padding-right:32px;
 padding-bottom:10px;
 padding-left:32px;
 border-radius: 4px;
+margin-bottom: 200px;
 
 font-size: 16px;
 line-height:calc(30/16);
