@@ -19,6 +19,7 @@ li {
 .container { width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
+margin-left: auto; margin-right: auto;
 }
 
 h1, h2 {
@@ -29,6 +30,7 @@ h1, h2 {
 .roof {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ECECEC;
 
 }
 .roof-nav {
@@ -137,9 +139,28 @@ margin-right: 50px;
   overflow: hidden;
 }
 
+/*------ Portfolio------- */
 /*portfolio navigation buttons*/
-.portfolio-nav {
-  
+
+.portfolio-nav{
+  display:flex;
+}
+.portfolio-nav-item {
+  display: flex;
+  margin-top: 94px;
+margin-right: 9px;
+margin-bottom: 20px;
+border-radius: 4px;
+}
+.portfolio-nav-button {
+  display: flex;
+padding-top: 6px; 
+padding: right 22px;  
+padding-bottom:6px;
+padding: left 22px;
+
+border: none;
+
 font-family:inherit;
 font-style: normal;
 font-weight: 500;
@@ -148,15 +169,39 @@ line-height: calc(26/16);
 color: var(--brand-text-color);
 background-color: #F5F4FA;
 }
+
+/* clean geometry */
+/* .portfolio-nav-button:last-child {
+  margin-right: 0; } */
+
 .pointer {cursor: pointer;}
 
-.portfolio-nav:hover, .portfolio-nav:focus {
+.portfolio-nav-button:hover, .portfolio-nav-button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
   color: var(--white-text-color);
   background-color: var(--accent-color);
 }
 
-.portfolio-title {
 
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.portfolio-item {
+display: flex;
+  margin-right: 30px;
+  border: 1px solid #EEEEEE;
+
+  width: 370px;
+height: 404px;
+
+}
+ .portfolio-item:nth-child(3n) {margin-right: 0;
+}
+.portfolio-title {
 font-size: 18px;
 line-height: calc(36/18);
 color: var(--brand-text-color);
@@ -168,7 +213,7 @@ line-height: calc(30/16);
 letter-spacing: 0.03em;
 color: #757575;
 }
-/* HERO */
+/* Hero */
 .hero { background-color: #2F303A;
   text-align: center;
   padding-top: 200px;
@@ -213,6 +258,8 @@ background-color: var(--accent-color);
 .hero-button:hover, .hero-button:focus {
 background-color: #188CE8}
 
+/* -----Benefits------- */
+
 .benefits {
  
 }
@@ -243,7 +290,8 @@ color: var(--brand-text-color);
 line-height: calc(24/14);
 letter-spacing: 0.03em;
 color: #757575;}
-/* examples */
+
+/*-----examples---- */
 
 .examples {
   /* display: flex; */
@@ -270,7 +318,9 @@ margin: 0;
   letter-spacing: 0.03em;
   color: var(--brand-text-color);
   }
-/* Team */
+
+/*-----Team------ */
+
 .team {
 margin-top: 94px;
 padding-top: 94px;
