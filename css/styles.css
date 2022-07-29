@@ -20,33 +20,41 @@ li {
   color: #757575;
 }
 .link:hover, .link:focus {color: var(--accent-color)}
-.container { width: 1200px;
+.container { 
+  display: flex;
+  align-items: center;
+
+  width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
 margin-left: auto; margin-right: auto;
 }
 
-h1, h2 {
+h1, h2, h3, p {
   margin: 0;
   padding: 0;
 } 
 /*-----------HEADER---------------*/
 .roof {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ECECEC;
 
+  border-bottom: 1px solid #ECECEC;
+padding-top: 24px;
+padding-bottom: 25px;
 }
 .roof-nav {
   display:flex;
 }
 .roof-list {
   display:flex;
+
+  padding-left: 0;
+  margin-top: 0; 
+  margin-bottom: 0;
 }
 .roof-logo {
-  margin-top: 24px;
+  /* margin-top: 24px; */
 margin-right: 93px;
-margin-bottom: 25px;
+/* margin-bottom: 25px; */
 
 
   font-family: 'Raleway';
@@ -94,21 +102,25 @@ margin-bottom: 25px;
   margin-right: 50px;
   
 
-  outline:1px solid tomato;
+
 }
 
 
 .roof-contacts {
   display: flex;
+
   margin-left: auto;
+  padding-left: 0;
+  margin-top: 0; 
+  margin-bottom: 0;
   color: #757575;
 
 }
 
 .roof-contacts-mail , .roof-contacts-tel {
-  display:block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* display:block; */
+  /* padding-top: 32px; */
+  /* padding-bottom: 32px; */
 margin-right: 50px;
 
   font-weight: 500;
@@ -264,6 +276,7 @@ padding-top: 10px;
 padding-right:32px;
 padding-bottom:10px;
 padding-left:32px;
+border: 0;
 border-radius: 4px;
 ;
 
@@ -280,11 +293,15 @@ background-color: #188CE8}
 /* -----Benefits------- */
 
 .benefits {
+  padding-top: 94px;
  
 }
 .benefits-list {
-  display: flex;
-  margin-top: 94px;
+display: flex;
+margin-top: 0;
+margin-bottom: 0;
+
+ 
   padding-left: 0;
 
 }
@@ -299,6 +316,8 @@ background-color: #188CE8}
 }
 
 .benefits-title {
+margin-bottom: 10px;
+
   font-size: 14px;
 line-height: calc(16/14);
 letter-spacing: 0.03em;
@@ -315,16 +334,18 @@ color: #757575;}
 
 .examples {
 
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .examples-list {
   display: flex;
-  margin-top: 0;
+  margin-top: 50px;
   padding-left: 0;
+  margin-bottom: 0;
   justify-content: center;
 }
 .examples li {
-  margin-top: 50px;
+
   margin-right: 30px;
 }
 /* clean geometry */
@@ -344,7 +365,7 @@ margin: 0;
 /*-----Team------ */
 
 .team {
-margin-top: 94px;
+/* margin-top: 94px; */
 padding-top: 94px;
 padding-bottom: 94px;
   background-color: #F5F4FA;
