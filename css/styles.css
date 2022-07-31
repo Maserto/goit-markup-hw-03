@@ -10,7 +10,7 @@ img {
   max-width: 100%;
 }
 body {font-family: 'Roboto', sans-serif;
-  max-width: 1600px;
+  /* max-width: 1600px; */
 }
 li {
   list-style-type: none;}
